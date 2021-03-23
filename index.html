@@ -1,0 +1,96 @@
+<html>
+    <head>
+
+        <title>JSON task</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: 'Roboto', sans-serif;
+            }
+            h4,h5{
+                text-align: center;
+            }
+        </style>
+    </head>
+<body>
+    <script src="HTTP.js"></script>
+
+<h3>Task 1 :</h3>
+<p>Do a write up for the followings:
+    <ul>
+    <li>Difference between HTTP1.1 vs HTTP2</li>
+    <li>HTTP version history</li>
+    <li>List 5 differences between Browser JS vs Node Js.</li>
+    <li>What happens when you type a URL in the address bar in the browser?</li>
+</ul></p>
+
+<h3>Answers</h3>
+
+<h4>Difference between HTTP1.1 vs HTTP2</h4> 
+
+<p><ol><li>HTTP 1.1 was developed in 1989 by Tim Berners Lee and used till now. Work on HTTP 2 has started from 2015 only.</li>
+<li>Request and responses in HTTP/1.1 is transferred in plain-text messages where as in HTTP/2 it is first encoded into binary</li>
+<li>HTTP2 manages buffer space more properly and avoids buffer overflow</li>
+<li>While sending CSS & JS files HTTP 1.1 uses Resource inlining (which is not very useful for big files and has not way of stopping to send the CSS and JS files if the client already has them which causes burden on internet). 
+<li>Over here HTTP 2 uses “Server Push” as HTTP allows to cater multiple concurrent responses it can be selective as to which data to push (Which is better)</li>
+<li>Compression : HTTP 1.1 doesn’t compress Header which can be a burden in long time where as HTTP 2 uses HPACK compressor, it splits header from body and compresses both separately moreover HPACK can keep track of previously compressed files and can optimize it’s compression (Which is very good)</li></ol>
+</p>
+
+<h4>HTTP version history</h4>
+<p><ol>
+    <li>HTTP was made by Tim Berners Lee in 1991(it had no version, but it is called as HTTP/0.9)</li>
+    <li>HTTP/1.0 was made in 1996</li>
+    <li>HTTP/1.1 was made in 1997 (This is the version we still use today)</li>
+    <li>HTTP/2.0 was made in 2015</li>
+    <li>HTTP/3.0 is in process</li>
+</ol></p>
+
+
+<h4>Differences between Browser JS vs Node Js</h4>
+
+<p><ol>
+    <li>Browser JS is mainly used for client side application, but node.js can be used for both client and server side.</li>
+    <li>Browser JS can run any engine but Node JS is run on V8 google chrome engine.</li>
+    <li>Node JS can not add HTML tags</li>
+    <li>Node JS is a runtime environment for Java Script language whereas Browser JS is language itself.</li>
+    <li>Browser is subject to rigorous security policies and restrictions (browser) while the Node JS isn't.</li>    
+</ol></p>
+
+<h4>What happens when you type a URL in the address bar</h4>
+
+<p><ol>
+    <li>You enter URL in browser</li>
+    <li>The Browser looks for IP address of domain name in DNS (Domain Name Server)</li>
+    <li>Browser initiates a TCP connection</li>
+    <li>Browser requests to server</li>
+    <li>Server sends HTTP response</li>
+    <li>Browser receives and displays website</li>
+</ol></p>
+
+<h3>Task 2 :</h3>
+<ul>
+    <li>Html and script.js file and run a for loop on the data and print all the country names in the console.</li>
+    <li>Write a write up on Difference between copy by value and copy by reference. </li>
+    <li>How to copy by value a composite data type (array+objects).</li>
+    <li>JSON task https://medium.com/@reach2arunprakash/guvi-zen-code-sprint-javascript-practice-problems-in-json-objects-and-list-49ac3356a8a5</li>
+    <li>Try the rest countries api. Extract and print the total population of all the countries in the console. use the html template. https://restcountries.eu/rest/v2/all </li>
+</ul> 
+
+<h3>Answers </h3>
+<ol>
+    <li>Find result in console tab under the heading `TASK 2 of Country Names`</li>
+    <li>DIFFERENCE BETWEEN COPY BY VALUE AND COPY BY REFERENCE : <br>
+
+        Copy by value is a property of primitive data sets (strings and numbers) where when a variable is copied then if the original value changes, the copied variable maintains its previous copied value. Whereas in Copy by reference, as the name suggests, the copied variable changes with change in original variable.
+        </li>
+    <li>Find result in console tab under the heading `How to copy by value a composite data type (array+objects)`</li>
+    <li>Find result in console tab under the heading `JSON tasks`</li>
+    <li>Find result in console tab under the heading `TASK 2 of Country Names`</li>
+    
+</ol>
+
+
+
+</body>
+</html>
